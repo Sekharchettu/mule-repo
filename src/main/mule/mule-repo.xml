@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="mule-repoFlow" doc:id="0d3ead4a-3ed0-48f1-b861-da6cc8b75397" >
+		<http:listener doc:name="Listener" doc:id="ef965a77-3854-4e7e-8f7f-33d038634da2" config-ref="HTTP_Listener_config" path="/Path"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f9d38d79-8959-4be3-80cc-6e21f49b24e8" message='#["Mulesoft"]'/>
+	</flow>
+</mule>
